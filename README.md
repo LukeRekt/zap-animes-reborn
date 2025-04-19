@@ -33,6 +33,7 @@ Assim como o projeto original, a ideia é criar uma plataforma de streaming de a
 - 🌐 Node.js (Express)
 - 🛢️ PostgreSQL
 - 🔐 JWT para autenticação
+- 📦 FFMPEG (para compressao de midia)
 
 ---
 

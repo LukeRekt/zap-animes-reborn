@@ -9,20 +9,7 @@ function App() {
     <>
       
       <Header/>
-      aqui vai todo o conteudo do site
-      <br/>
-      aqui vai todo o conteudo do site
-      <br/>
-      aqui vai todo o conteudo do site
-      <br/>
-      aqui vai todo o conteudo do site
-      <br/>
-      aqui vai todo o conteudo do site
-      <br/>
-      aqui vai todo o conteudo do site
-      <br/>
-      aqui vai todo o conteudo do site
-      <br/>
+     
     </>
   )
 }
