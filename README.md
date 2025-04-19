@@ -1,54 +1,74 @@
-# React + TypeScript + Vite
+# 🚀 Zap Animes Reborn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Zap Animes Reborn** é um remake do projeto original **Zap Animes**, um site de streaming de animes com funcionalidades como assistir episódios, acompanhar progresso, explorar títulos e muito mais.
 
-Currently, two official plugins are available:
+> ⚠️ Este projeto é de cunho pessoal e tem como único objetivo o aprimoramento das minhas habilidades em desenvolvimento web. nao tendo nenhum interesse comercial.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧠 Sobre o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O **Zap Animes Reborn** foi recriado do zero utilizando tecnologias modernas como **React**, **Vite** e **Tailwind CSS** para o front-end, e futuramente **Node.js** para o back-end.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Assim como o projeto original, a ideia é criar uma plataforma de streaming de animes funcional, responsiva e bonita, onde usuários possam:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 📺 Assistir episódios online
+- 📌 Marcar progresso em episódios assistidos
+- 🔍 Navegar e buscar animes
+- 🧾 Visualizar informações detalhadas dos títulos
+- 💾 Criar contas e salvar progresso (em versões futuras)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠 Tecnologias
+
+### Front-end
+
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Tailwind CSS
+
+### Back-end (planejado)
+
+- 🌐 Node.js (Express)
+- 🛢️ PostgreSQL
+- 🔐 JWT para autenticação
+
+---
+
+## 📈 Progresso do projeto
+
+| Etapa             | Status  |
+|-------------------|---------|
+| 🎨 Front-end       | 🟦 5%    |
+| 🔙 Back-end        | ⚪ 0%    |
+| 🧪 Testes          | ⚪ 0%    |
+| 🗃️ Integração com API externa (MyAnimeList, Anilist, etc) | ⚪ 0%    |
+| 📱 Responsividade  | ⚪ 0%    |
+| 👤 Autenticação de usuário | ⚪ 0%    |
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+### Pré-requisitos
+
+- Node.js v18+
+- npm ou yarn
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/LukeRekt/zap-animes-reborn.git
+cd zap-animes-reborn
+
+# Instale as dependências
+npm install
+# ou
+yarn install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
