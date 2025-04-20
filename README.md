@@ -41,7 +41,7 @@ Assim como o projeto original, a ideia é criar uma plataforma de streaming de a
 
 | Etapa             | Status  |
 |-------------------|---------|
-| 🎨 Front-end       | 🟦 5%    |
+| 🎨 Front-end       | 🟦 10%    |
 | 🔙 Back-end        | ⚪ 0%    |
 | 🧪 Testes          | ⚪ 0%    |
 | 🗃️ Integração com API externa (MyAnimeList, Anilist, etc) | ⚪ 0%    |
