@@ -35,7 +35,7 @@ export default function TopAnimes(){
     return (
         <div className="flex flex-col  h-[95%] justify-between  pl-2 pr-2 pt-1 pb-1 rounded-sm font-montserrat ">
            {listaAnimes.map((item, index) =>{
-            return <div className="flex items-center gap-4 ">
+            return <div className="flex items-center gap-4 bg-[#11111181] p-2 shadow shadow-[#a8a8a807] hover:bg-[#20202081] duration-500 cursor-pointer">
                 <p>{index + 1}</p>
                         <div className="w-24 h-15 overflow-hidden rounded-sm">
                             <img className="" src={item.imagem}/>

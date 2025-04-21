@@ -14,10 +14,10 @@ export default function Header(){
 
             <div className='flex gap-6'>
                 <div className='flex items-center gap-5 text-xs'>
-                <p className='flex gap-1 items-center text-amber-500 cursor-pointer'><Home className='w-4' strokeWidth={1.2}/>Home</p>
-                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500'><TrendingUp className='w-4 ' strokeWidth={1.2}/>Animes do momento</p>
-                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500'><DiamondPlus className='w-4' strokeWidth={1.2}/> Recem adicionados</p>
-                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500'><Calendar className='w-4' strokeWidth={1.2}/> Calendario</p>
+                <p className='flex gap-1 items-center text-amber-500 cursor-pointer drop-shadow-amber-500 drop-shadow-2xl'><Home className='w-4' strokeWidth={1.2}/>Home</p>
+                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500 hover:drop-shadow-amber-500 drop-shadow-2xl'><TrendingUp className='w-4 ' strokeWidth={1.2}/>Animes do momento</p>
+                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500 hover:drop-shadow-amber-500 drop-shadow-2xl'><DiamondPlus className='w-4' strokeWidth={1.2}/> Recem adicionados</p>
+                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500 hover:drop-shadow-amber-500 drop-shadow-2xl'><Calendar className='w-4' strokeWidth={1.2}/> Calendario</p>
                 </div>
                 {/* usuario e sino notificacoes */}
                 <div className='flex items-center gap-3'>

@@ -8,9 +8,9 @@ export default function Carousel(){
                <div className='flex flex-col gap-2 justify-end mb-18 ml-5'>
                 <h1>Jujutsu Kaizen</h1>
                 <div className='flex gap-2'>
-                    <small className='bg-amber-600 p-0.5 pl-1.5 pr-1.5 rounded-xs'>Acao</small>
-                    <small className='bg-amber-600 p-0.5 pl-1.5 pr-1.5 rounded-xs'>Acao</small>
-                    <small className='bg-amber-600 p-0.5 pl-1.5 pr-1.5 rounded-xs'>Acao</small>
+                    <small className='bg-amber-600 p-0.5 pl-1.5 pr-1.5 rounded-xs opacity-80'>Acao</small>
+                    <small className='bg-amber-600 p-0.5 pl-1.5 pr-1.5 rounded-xs opacity-80'>Acao</small>
+                    <small className='bg-amber-600 p-0.5 pl-1.5 pr-1.5 rounded-xs opacity-80'>Acao</small>
                 </div>
                     <p className='text-xs font-normal w-[60%] text-amber-100'>
                         Um xamã estudando no primeiro ano na Escola
@@ -22,9 +22,9 @@ export default function Carousel(){
                         salvar Yuji de sua execução após sua posse por Sukuna.
                     </p>
                     <div className='flex gap-2 text-[0.6rem]'>
-                        <button className='flex gap-1 items-center bg-amber-600 pr-1 pl-1 rounded-xs text-amber-100'>
+                        <button className='flex gap-1 items-center bg-amber-600 pr-1 pl-1 rounded-xs text-amber-100 opacity-80 duration-200 cursor-pointer hover:opacity-100'>
                             <SquarePlus className='w-4'/> Minha Lista</button>
-                        <button className='flex gap-1 items-center bg-amber-600 pr-1 pl-1 rounded-xs text-amber-100'>
+                        <button className='flex gap-1 items-center bg-amber-600 pr-1 pl-1 rounded-xs text-amber-100 opacity-80 duration-200 cursor-pointer hover:opacity-100'>
                             <Play className='w-4'/> Assistir agora</button>
                     </div>
                </div>
