@@ -33,7 +33,7 @@ export default function TopAnimes(){
     ]
 
     return (
-        <div className="flex flex-col  h-[95%] justify-between  pl-2 pr-2 pt-1 pb-1 rounded-sm font-montserra ">
+        <div className="flex flex-col  h-[95%] justify-between  pl-2 pr-2 pt-1 pb-1 rounded-sm font-montserrat ">
            {listaAnimes.map((item, index) =>{
             return <div className="flex items-center gap-4 ">
                 <p>{index + 1}</p>

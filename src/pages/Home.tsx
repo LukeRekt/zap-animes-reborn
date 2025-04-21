@@ -95,7 +95,7 @@ export default function Home(){
 
 
     return (
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center font-montserrat">
          <section className="h-[30em] ">
               <div className="flex justify-center gap-5 h-[100%]">
                 <div className="h-[100%] ">
@@ -117,7 +117,11 @@ export default function Home(){
 
 
          {/* Conteudo de animes */}
-            <div className="w-[95%] flex items-center justify-center mb-5">
+            <div className="w-[95%] flex flex-col mt-7">
+                <div>
+                    <h1 className="text-xl font-medium text-amber-500 opacity-80">Os que nao saem da boca do povo</h1>
+                    <p className="text-gray-600 text-xs">Com base nos animes mais comentados do momento.</p>
+                </div>
                 <AnimeItem animes={listaAnimes}/>
     
             </div>
