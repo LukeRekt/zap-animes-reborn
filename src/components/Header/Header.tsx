@@ -1,12 +1,12 @@
-import logo from '../../assets/Zap Animes.png'
+import logo from '../../assets/Zap Animes 2.png'
 import avatar from '../../assets/47284018.jfif'
 import SearchBar from './SearchBar/SearchBar'
-import { Bell, Calendar, DiamondPlus, Home, TrendingUp } from 'lucide-react'
+import { Bell, Calendar, DiamondPlus, Ellipsis, Home, TrendingUp } from 'lucide-react'
 
 // #ff9900
 export default function Header(){
     return (
-        <div className='flex items-center justify-between p-4'>
+        <div className='flex items-center justify-between p-4 font-montserrat'>
             <div className='flex items-center gap-5'>
                 <img src={logo} className='w-30 h-10 object-cover'/>
                 <SearchBar/>
@@ -14,15 +14,16 @@ export default function Header(){
 
             <div className='flex gap-6'>
                 <div className='flex items-center gap-5 text-xs'>
-                <p className='flex gap-1 items-center text-amber-500'><Home className='w-4' strokeWidth={1.2}/>Home</p>
-                    <p className='flex gap-1 items-center'><TrendingUp className='w-4 ' strokeWidth={1.2}/>Animes do momento</p>
-                    <p className='flex gap-1 items-center'><DiamondPlus className='w-4' strokeWidth={1.2}/> Recem adicionados</p>
-                    <p className='flex gap-1 items-center'><Calendar className='w-4' strokeWidth={1.2}/> Calendario</p>
+                <p className='flex gap-1 items-center text-amber-500 cursor-pointer'><Home className='w-4' strokeWidth={1.2}/>Home</p>
+                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500'><TrendingUp className='w-4 ' strokeWidth={1.2}/>Animes do momento</p>
+                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500'><DiamondPlus className='w-4' strokeWidth={1.2}/> Recem adicionados</p>
+                    <p className='flex gap-1 items-center cursor-pointer duration-200 hover:text-amber-500'><Calendar className='w-4' strokeWidth={1.2}/> Calendario</p>
                 </div>
                 {/* usuario e sino notificacoes */}
                 <div className='flex items-center gap-3'>
                     <Bell className='w-5' strokeWidth={1.2}/>
                     <img src={avatar} className='w-8 rounded-full'/>
+                    <Ellipsis className='w-5'/>
                 </div>
             </div>
         </div>
