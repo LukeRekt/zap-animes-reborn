@@ -1,14 +1,14 @@
-import { PrismaClient } from '@prisma/client'
-import { data } from 'react-router-dom'
-import express from 'express';
-import cors from 'cors';
-import { verifyPasswd } from './middlewares/User.js';
-const prisma = new PrismaClient()
+const { PrismaClient } = require('@prisma/client');
+const express = require('express');
+const cors = require('cors');
 
+const prisma = new PrismaClient()
+const AnimeRoutes = require('./routes/animeRoutes');
 const app = express();
 
 app.use(cors());
-
+app.use(express.json())
+app.use('/',AnimeRoutes)
 const PORT = 3232;
 
 async function main() {
@@ -38,9 +38,7 @@ main()
     process.exit(1)
   })
 
-  app.get('/', verifyPasswd, (req, res) =>{
-    res.send({message:"a"})
-  })
+
 
   app.listen(PORT, () =>{
     console.log("Server rodando na porta ", PORT);
