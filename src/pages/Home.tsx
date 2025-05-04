@@ -2,8 +2,34 @@ import { Star } from "lucide-react";
 import Carousel from "../components/Carousel/Carousel";
 import TopAnimes from "../components/TopAnimes/TopAnimes";
 import AnimeItem from "../components/AnimeItem/AnimeItem";
+import { useEffect, useState } from "react";
+import { getAnimes } from "../api/animes";
 
 export default function Home(){
+    const [animesData, setAnimes] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+    async function getUserData() {
+        try {
+                const res = await getAnimes(); 
+                if (res.error) {
+                  console.log(res.error);
+   
+                    }
+                else {
+                    setAnimes(res)
+                  console.log(res)
+                  setIsLoading(false)
+                }
+            } catch (err) {
+     
+                console.log(err);
+            }
+      }
+      getUserData();
+      }, []);
+
 
 
     const listaAnimes = [
@@ -122,7 +148,7 @@ export default function Home(){
                     <h1 className="text-xl font-medium text-amber-500 opacity-90">Os que nao saem da boca do povo</h1>
                     <p className="text-gray-600 text-xs">Com base nos animes mais comentados do momento.</p>
                 </div>
-                <AnimeItem animes={listaAnimes}/>
+                <AnimeItem animes={animesData}/>
     
             </div>
         </div>

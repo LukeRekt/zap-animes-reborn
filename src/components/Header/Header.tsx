@@ -2,13 +2,14 @@ import logo from '../../assets/Zap Animes 2.png'
 import avatar from '../../assets/47284018.jfif'
 import SearchBar from './SearchBar/SearchBar'
 import { Bell, Calendar, DiamondPlus, Ellipsis, Home, TrendingUp } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 // #ff9900
 export default function Header(){
     return (
         <div className='flex items-center justify-between p-4 font-montserrat'>
             <div className='flex items-center gap-5'>
-                <img src={logo} className='w-30 h-10 object-cover'/>
+                <Link to="/"><img src={logo} className='w-30 h-10 object-cover'/></Link>
                 <SearchBar/>
             </div>
 

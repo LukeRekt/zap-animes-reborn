@@ -6,7 +6,7 @@ const prisma = new PrismaClient()
 const AnimeRoutes = require('./routes/animeRoutes');
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use(express.json())
 app.use('/',AnimeRoutes)
 const PORT = 3232;

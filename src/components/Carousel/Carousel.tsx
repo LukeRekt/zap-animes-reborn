@@ -3,7 +3,7 @@ import carouselImagem from '../../assets/1350256.jpeg'
 
 export default function Carousel(){
     return(
-        <div className='relative w-[70em] h-[95%] rounded-sm overflow-hidden font-montserrat shadow-amber-500 shadow-2xl/5'>
+        <div className='relative w-[95em] h-[100%] rounded-sm overflow-hidden font-montserrat shadow-amber-500 shadow-2xl/5'>
             <div className='bg-[#0000008f] z-10 w-[100%] h-[100%] absolute flex flex-col justify-end'>
                <div className='flex flex-col gap-2 justify-end mb-18 ml-5'>
                 <h1>Jujutsu Kaizen</h1>
@@ -30,7 +30,7 @@ export default function Carousel(){
                </div>
             </div>
             
-            <img className='w-[100%] h-[100%] ' src={carouselImagem}/>
+            <img className='w-[100%] h-[100%] object-fit' src={carouselImagem}/>
 
             <div className='flex items-center gap-1 absolute bottom-5 left-[45%] z-20 '>
                 <CircleDot className='text-amber-500 w-4'/>

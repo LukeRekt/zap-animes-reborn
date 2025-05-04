@@ -37,8 +37,10 @@ model Favorito {
 model Anime {
   id             Int         @id @default(autoincrement())
   name           String      @db.VarChar(255)
+  slug         String      @db.VarChar(255) @unique
   descricao      String?
   capa           String?
+  photoLarge           String?
   dataLancamento DateTime?
   generos        Genero[]    @relation("AnimeGeneros")
   episodios      Episodio[]
